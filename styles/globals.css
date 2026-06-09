@@ -1,0 +1,242 @@
+/************ Custom Font ************/
+@font-face {
+  font-family: QuirkyRobot;
+  src: url("../assets/fonts/QuirkyRobot/QuirkyRobot.ttf");
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: Centra;
+  src: url('../assets/fonts/Centra/CentraNo2-Medium.woff2') format('woff2'),
+    url('../assets/fonts/Centra/CentraNo2-Medium.woff') format('woff');
+  font-weight: 500;
+  font-display: fallback;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Centra;
+  src: url('../assets/fonts/Centra/CentraNo2-Bold.woff2') format('woff2'),
+    url('../assets/fonts/Centra/CentraNo2-Bold.woff') format('woff');
+  font-style: normal;
+  font-weight: 700;
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: Centra;
+  src: url('../assets/fonts/Centra/CentraNo2-Book.woff2') format('woff2'),
+    url('../assets/fonts/Centra/CentraNo2-Book.woff') format('woff');
+  font-weight: 400;
+  font-display: fallback;
+  font-style: normal;
+}
+
+
+
+
+/* **********General****** */
+html {
+  scroll-behavior: smooth;
+
+}
+
+:root {
+  --main-background: #0D0514;
+  --page-size: 68.75rem;
+  --primary-color: #a527d6;
+  --secondary-color: #57df79;
+  --tertiary-color: #4aa9d1;
+  --fourth-color: #E7B43A;
+  --padding: 15px;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+body {
+  width: 100vw;
+  min-height: 100vh;
+  max-width: 100%;
+  overflow-x: hidden !important;
+  color: white;
+  font-family: 'Centra', sans-serif;
+  font-weight: 400;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: #0C1444;
+  cursor: url(./assets/images/arrow.cur), auto;
+}
+
+
+h1,
+h2,
+h3,
+h4 {
+  color: white;
+  font-size: 48px;
+  /* font-family: 'QuirkyRobot', sans-serif; */
+  font-weight: normal;
+}
+
+h2 {
+  margin: 0 auto;
+  margin-bottom: 24px;
+  font-size: 4rem;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: .4375rem;
+}
+
+button {
+  font-family: 'Centra', sans-serif;
+  font-weight: 700;
+}
+
+p {
+  font-size: 16px;
+  color: rgb(184, 184, 184);
+  line-height: 1.8;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.prevent-select {
+  -webkit-user-select: none;
+  /* Safari */
+  -ms-user-select: none;
+  /* IE 10 and IE 11 */
+  user-select: none;
+  /* Standard syntax */
+}
+
+.wrapper {
+  max-width: var(--page-size);
+  margin: 0 auto;
+}
+
+
+/* .cursor {
+  display: none;
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  z-index: 10000000;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  background-color: white;
+  transition: width 0.1s ease-in-out, height 0.1s ease-in-out;
+  animation: borderAnim 4s linear infinite;
+  animation-name: none;
+  transform-origin: 80% 80%;
+  transition: transform 0.5s ease-in-out;
+  background-image: url(../assets/images/cursor.png);
+
+}
+
+.cursor__border {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 2px solid rgb(167, 167, 167);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: pulse 0.3s ease-in-out infinite alternate;
+  animation-name: pulse;
+}
+
+.click {
+  animation: click 0.3s ease-in-out;
+} */
+
+
+
+::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #0A0831;
+}
+
+::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: #0A0831;
+}
+
+::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #0c1b5e;
+}
+
+@keyframes click {
+  100% {
+    transform: scale(3);
+    opacity: 0;
+    background-color: purple;
+  }
+}
+
+@keyframes pulse {
+  100% {
+    transform: scale(1.2);
+  }
+
+}
+
+@keyframes borderAnim {
+
+  0%,
+  100% {
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  }
+
+  25%,
+  75% {
+    border-radius: 64%, 36% 72% 28% / 35% 60% 40% 65%;
+  }
+
+  50% {
+    border-radius: 46% 54% 38% 62% / 66% 38% 62% 34%;
+  }
+}
+
+
+
+
+
+/* a:hover~.cursor,
+button:hover~.cursor {
+  transform: scale(6);
+} */
+/* 
+@media screen and (min-width: 1200px) {
+  *,
+*::after,
+*::before {
+  cursor: none;
+}
+
+button:hover {
+  cursor: none;
+}
+
+.cursor {
+  display: block;
+}
+} */
