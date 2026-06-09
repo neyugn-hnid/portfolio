@@ -16,6 +16,10 @@
   transform: translateX(-100%);
 }
 
+.fromBottom {
+  transform: translateY(40px);
+}
+
 .all-skills__skill:nth-child(2) {
   transition-delay: 200ms;
 }

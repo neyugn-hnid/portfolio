@@ -2,8 +2,9 @@
   padding: 16px;
   font-size: 18px;
   border-radius: .3125rem;
-  background-image: linear-gradient(to right, #e7b43a, #ecbc4b, #f0c45b, #f5cc6a, #f9d479);
   text-shadow: white .1875rem;
+  background: #ffb300;
+  color: black;
   border: none;
   cursor: pointer;
   color: black;
@@ -18,7 +19,7 @@
   background-image: none;
   color: white;
   border: .0625rem solid rgb(184, 184, 184);
-  padding: 16px;
+  padding: 8px 20px;
 }
 
 .button--secondary:hover {

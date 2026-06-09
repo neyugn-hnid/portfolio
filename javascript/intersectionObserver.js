@@ -1,4 +1,4 @@
-const pages = ['hero', 'skills', 'projects', 'contact'];
+const pages = ['hero', 'about', 'skills', 'projects', 'game'];
 
 export function intersectionObserver() {
   var observer = new IntersectionObserver(
@@ -12,18 +12,12 @@ export function intersectionObserver() {
           'active: ', active.classList.remove('active-link');
         });
         // Add new active links
-        if (activeLinkId === 'contact') {
-          document
-            .querySelector('.mobile-' + activeLinkId)
-            .classList.add('active-link');
-        } else {
-          document
-            .querySelector('.desktop-' + activeLinkId)
-            .classList.add('active-link');
-          document
-            .querySelector('.mobile-' + activeLinkId)
-            .classList.add('active-link');
-        }
+        document
+          .querySelector('.desktop-' + activeLinkId)
+          .classList.add('active-link');
+        document
+          .querySelector('.mobile-' + activeLinkId)
+          .classList.add('active-link');
       }
     },
     { threshold: [0.2] }

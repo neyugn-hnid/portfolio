@@ -22,5 +22,5 @@
   height: 100%;
   object-fit: cover;
   z-index: -100;
-  filter: brightness(25%) !important;
+  filter: brightness(100%) !important;
 }

@@ -14,6 +14,6 @@ html {
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: 3; /* Hiển thị trên các element khác */
+    z-index: 999999; /* Keep the tentacles visible across every section. */
     pointer-events: none; /* Quan trọng: không chặn tương tác chuột */
 }

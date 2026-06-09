@@ -1,0 +1,53 @@
+.container-meteor-game {
+  position: relative;
+  background:
+    linear-gradient(to bottom, rgba(8, 14, 45, .46), rgba(2, 6, 30, .62)),
+    url(../assets/images/bg13.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.meteor-game {
+  min-height: 100vh;
+  padding: 5rem var(--padding);
+}
+
+.meteor-game__header {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.meteor-game__eyebrow {
+  margin-bottom: 1rem;
+  color: rgb(184, 184, 184);
+  letter-spacing: .28rem;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.meteor-game__heading {
+  margin-bottom: 1rem;
+}
+
+.meteor-game__copy {
+  max-width: 42rem;
+  margin: 0 auto;
+  color: rgba(255, 255, 255, .78);
+}
+
+.meteor-game__frame {
+  border: 1px solid rgba(255, 255, 255, .12);
+  border-radius: .75rem;
+  overflow: hidden;
+  background: rgba(0, 0, 0, .32);
+  box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, .25);
+}
+
+.meteor-game__canvas {
+  display: block;
+  width: 100%;
+  height: min(70vh, 38rem);
+  min-height: 24rem;
+  cursor: none;
+}

@@ -1,0 +1,176 @@
+    .screen-shake {
+      animation: screenShake 0.5s ease-in-out;
+    }
+
+    @keyframes screenShake {
+
+      0%,
+      100% {
+        transform: translate(0, 0);
+      }
+
+      10% {
+        transform: translate(-3px, -2px);
+      }
+
+      20% {
+        transform: translate(3px, 2px);
+      }
+
+      30% {
+        transform: translate(-2px, -1px);
+      }
+
+      40% {
+        transform: translate(2px, 1px);
+      }
+
+      50% {
+        transform: translate(-1px, -1px);
+      }
+
+      60% {
+        transform: translate(1px, 1px);
+      }
+
+      70% {
+        transform: translate(-1px, 0);
+      }
+
+      80% {
+        transform: translate(1px, 0);
+      }
+
+      90% {
+        transform: translate(-0.5px, 0);
+      }
+    }
+
+    .screen-shake-intense {
+      animation: screenShakeIntense 0.6s ease-in-out;
+    }
+
+    @keyframes screenShakeIntense {
+
+      0%,
+      100% {
+        transform: translate(0, 0);
+      }
+
+      8% {
+        transform: translate(-4px, -3px);
+      }
+
+      16% {
+        transform: translate(4px, 3px);
+      }
+
+      24% {
+        transform: translate(-3px, -2px);
+      }
+
+      32% {
+        transform: translate(3px, 2px);
+      }
+
+      40% {
+        transform: translate(-2px, -1px);
+      }
+
+      48% {
+        transform: translate(2px, 1px);
+      }
+
+      56% {
+        transform: translate(-1px, -1px);
+      }
+
+      64% {
+        transform: translate(1px, 1px);
+      }
+
+      72% {
+        transform: translate(-1px, 0);
+      }
+
+      80% {
+        transform: translate(1px, 0);
+      }
+
+      88% {
+        transform: translate(-0.5px, 0);
+      }
+
+      96% {
+        transform: translate(0.5px, 0);
+      }
+    }
+
+    /* Đảm bảo canvas không bị ảnh hưởng bởi shake */
+    #shooting-stars-canvas,
+    #electric-tentacles-el,
+    #particles-js {
+      position: fixed !important;
+      pointer-events: none;
+    }
+
+    /* Back to Top Button */
+    .back-to-top {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 2rem 0 4rem;
+    }
+
+    .back-to-top a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 53px;
+      height: 50px;
+      background: linear-gradient(135deg, #9327d6, #5768df);
+      color: white;
+      text-decoration: none;
+      border-radius: 21%;
+      font-size: 14px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      box-shadow: 0 4px 15px rgba(165, 39, 214, 0.3);
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .back-to-top a::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+      transition: left 0.5s;
+    }
+
+    .back-to-top a:hover::before {
+      left: 100%;
+    }
+
+    .back-to-top a:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 20px rgba(165, 39, 214, 0.4);
+      background: linear-gradient(135deg, #57df79, #a527d6);
+    }
+
+    .back-to-top a:active {
+      transform: translateY(-1px);
+    }
+
+    /* Arrow icon */
+    .back-to-top a::after {
+      content: '↑';
+      font-size: 18px;
+      font-weight: bold;
+    }
+

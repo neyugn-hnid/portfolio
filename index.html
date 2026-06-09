@@ -5,228 +5,18 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Portfolio of Renas Hassan" />
-  <title>Kunkey - Portfolio</title>
-  <link rel="shortcut icon" href="./assets/images/favicon.png" />
-  <meta property="description"
-    content="I'm Kunkey. A full stack web developer who is passionate about creating beautiful, functional and responsive websites." />
-  <meta property="og:locale" content="vi" />
-  <meta property="og:title" content="Kunkey" />
-  <meta property="og:description"
-    content="I'm Kunkey. A full stack web developer who is passionate about creating beautiful, functional and responsive websites." />
-  <meta property="og:image" content="./assets/images/favicon.png" />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://kunkey.dev" />
-  <meta property="og:site_name" content="kunkey.dev" />
+  <meta name="description" content="Portfolio" />
+  <title>Portfolio</title>
   <link rel="stylesheet" href="./styles/styles.css" />
-  <link rel="stylesheet" href="./styles/blog.css?f=ccc2" />
-  <link rel="stylesheet" href="./styles/music-player.css" />
   <!-- Swiper CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <script type="module" src="./javascript/index.js"></script>
-  
-  <!-- Back to Top Script -->
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      const backToTopButton = document.getElementById('backToTop');
-      
-      // Smooth scroll to top when clicked
-      backToTopButton.addEventListener('click', function(e) {
-        e.preventDefault();
-        window.scrollTo({
-          top: 0,
-          behavior: 'smooth'
-        });
-      });
-    });
-  </script>
+
   <!-- <script async src="https://cdn.splitbee.io/sb.js"></script> -->
 
   <!-- Electric Tentacles-->
-  <link rel="stylesheet" href="./libs/electric-tentacles/style.css?t=2">
+  <link rel="stylesheet" href="./libs/electric-tentacles/style.css?t=3">
 
-  <!-- Screen Shake Effect -->
-  <style>
-    .screen-shake {
-      animation: screenShake 0.5s ease-in-out;
-    }
-
-    @keyframes screenShake {
-
-      0%,
-      100% {
-        transform: translate(0, 0);
-      }
-
-      10% {
-        transform: translate(-3px, -2px);
-      }
-
-      20% {
-        transform: translate(3px, 2px);
-      }
-
-      30% {
-        transform: translate(-2px, -1px);
-      }
-
-      40% {
-        transform: translate(2px, 1px);
-      }
-
-      50% {
-        transform: translate(-1px, -1px);
-      }
-
-      60% {
-        transform: translate(1px, 1px);
-      }
-
-      70% {
-        transform: translate(-1px, 0);
-      }
-
-      80% {
-        transform: translate(1px, 0);
-      }
-
-      90% {
-        transform: translate(-0.5px, 0);
-      }
-    }
-
-    .screen-shake-intense {
-      animation: screenShakeIntense 0.6s ease-in-out;
-    }
-
-    @keyframes screenShakeIntense {
-
-      0%,
-      100% {
-        transform: translate(0, 0);
-      }
-
-      8% {
-        transform: translate(-4px, -3px);
-      }
-
-      16% {
-        transform: translate(4px, 3px);
-      }
-
-      24% {
-        transform: translate(-3px, -2px);
-      }
-
-      32% {
-        transform: translate(3px, 2px);
-      }
-
-      40% {
-        transform: translate(-2px, -1px);
-      }
-
-      48% {
-        transform: translate(2px, 1px);
-      }
-
-      56% {
-        transform: translate(-1px, -1px);
-      }
-
-      64% {
-        transform: translate(1px, 1px);
-      }
-
-      72% {
-        transform: translate(-1px, 0);
-      }
-
-      80% {
-        transform: translate(1px, 0);
-      }
-
-      88% {
-        transform: translate(-0.5px, 0);
-      }
-
-      96% {
-        transform: translate(0.5px, 0);
-      }
-    }
-
-    /* Đảm bảo canvas không bị ảnh hưởng bởi shake */
-    #shooting-stars-canvas,
-    #electric-tentacles-el,
-    #particles-js {
-      position: fixed !important;
-      pointer-events: none;
-    }
-     
-     /* Back to Top Button */
-     .back-to-top {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-top: -22vh;
-     }
-     
-     .back-to-top a {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      width: 53px;
-      height: 50px;
-      background: linear-gradient(135deg, #9327d6, #5768df);
-      color: white;
-      text-decoration: none;
-      border-radius: 21%;
-      font-size: 14px;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      box-shadow: 0 4px 15px rgba(165, 39, 214, 0.3);
-      transition: all 0.3s ease;
-      position: relative;
-      overflow: hidden;
-     }
-     
-     .back-to-top a::before {
-       content: '';
-       position: absolute;
-       top: 0;
-       left: -100%;
-       width: 100%;
-       height: 100%;
-       background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
-       transition: left 0.5s;
-     }
-     
-     .back-to-top a:hover::before {
-       left: 100%;
-     }
-     
-     .back-to-top a:hover {
-       transform: translateY(-3px);
-       box-shadow: 0 6px 20px rgba(165, 39, 214, 0.4);
-       background: linear-gradient(135deg, #57df79, #a527d6);
-     }
-     
-     .back-to-top a:active {
-       transform: translateY(-1px);
-     }
-     
-     /* Arrow icon */
-     .back-to-top a::after {
-       content: '↑';
-       font-size: 18px;
-       font-weight: bold;
-     }
-   </style>
-
-  <!-- SoundManager-->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/soundmanager2/V2.97a.20170601/script/soundmanager2.js"></script>
-  <!-- <script async src="./javascript/sound.js"></script> -->
   <script type="text/javascript" src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 </head>
 
@@ -249,311 +39,6 @@
       <div class="white-orbit w3 leo"></div>
     </div>
   </div>
-
-  <div class='wrap-planet'>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-    <div class='c'></div>
-  </div>
-
-
   <div id="container">
     <div class="cursor">
       <div class="cursor__border"></div>
@@ -563,7 +48,7 @@
     <nav class="nav">
       <div class="wrapper">
         <section class="nav__mobile">
-          <a href="#hero"><img class="nav__img" src="./assets/images/logo.png" alt="logo" /></a>
+          <a class="nav__brand" href="#hero">Van Dinh</a>
           <aside class="nav__hamburger">
             <i class="nav__hamburger-icon fa-solid fa-bars"></i>
             <i class="nav__hamburger-close fa-solid fa-xmark"></i>
@@ -572,25 +57,27 @@
 
         <section class="nav__desktop">
           <aside>
-            <a href="#hero"><img class="nav__img link hidden fromTop" src="./assets/images/logo.png" alt="logo" /></a>
+            <a class="nav__brand nav__brand--desktop" href="#hero">Van Dinh</a>
           </aside>
           <section class="nav__desktop-links">
             <a class="desktop-hero active-link link hidden fromTop" href="#hero"><i class="fa-solid fa-house"></i>
               Home</a>
+            <a class="desktop-about link hidden fromTop" href="#about"><i class="fa-solid fa-user"></i>
+              About</a>
             <a class="desktop-projects link hidden fromTop" href="#projects"><i class="fa-solid fa-diagram-project"></i>
               Projects</a>
             <a class="desktop-skills link hidden fromTop" href="#skills"><i class="fa-solid fa-code"></i> Skills</a>
-            <a class="desktop-blog link hidden fromTop" href="#blog"><i class="fa-solid fa-blog"></i> Blog</a>
+            <a class="desktop-game link hidden fromTop" href="#game"><i class="fa-solid fa-gamepad"></i> Game</a>
           </section>
           <article class="nav__desktop-socials">
-            <a class="link hidden fromTop" href="https://t.me/bruhh_lmao" target="_blank" aria-label="telegram"
-              title="telegram"><i class="fa-brands fa-telegram"></i></a>
-            <a class="link hidden fromTop" href="https://www.facebook.com/kunkey.git" target="_blank"
+            <a class="link hidden fromTop" href="https://www.linkedin.com/in/neyugnhnid" target="_blank"
+              aria-label="linkedIn" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+            <a class="link hidden fromTop" href="https://www.facebook.com/neyugnhind" target="_blank"
               aria-label="Facebook" title="Facebook"><i class="fa-brands fa-facebook"></i></a>
-            <a class="link hidden fromTop" href="https://github.com/kunkey" target="_blank" aria-label="Github"
+            <a class="link hidden fromTop" href="https://github.com/neyugn-hnid" target="_blank" aria-label="Github"
               title="Github"><i class="fa-brands fa-github"></i></a>
           </article>
-          <a class="link hidden fromTop" href="https://www.facebook.com/kunkey.git/" area-label="Contact Me"
+          <a class="link hidden fromTop" href="https://www.facebook.com/neyugn-hnid" area-label="Contact Me"
             title="Contact Me" target="_blank"><button
               class="button button--secondary link hidden fromTop">Contact</button></a>
         </section>
@@ -604,6 +91,9 @@
             Home</a>
         </li>
         <li>
+          <a class="sidebar-mobile__item mobile-about" href="#about"><i class="fa-solid fa-user"></i> About</a>
+        </li>
+        <li>
           <a class="sidebar-mobile__item mobile-projects" href="#projects"><i class="fa-solid fa-diagram-project"></i>
             Projects</a>
         </li>
@@ -611,312 +101,232 @@
           <a class="sidebar-mobile__item mobile-skills" href="#skills"><i class="fa-solid fa-code"></i> Skills</a>
         </li>
         <li>
-          <a class="sidebar-mobile__item mobile-blog" href="#blog"><i class="fa-solid fa-blog"></i> Blog</a>
+          <a class="sidebar-mobile__item mobile-game" href="#game"><i class="fa-solid fa-gamepad"></i> Game</a>
         </li>
         <li>
-          <a class="sidebar-mobile__item" href="https://t.me/bruhh_lmao" target="_blank"><i
-              class="fa-brands fa-telegram"></i>Telegram</a>
+          <a class="sidebar-mobile__item" href="https://www.linkedin.com/in/neyugnhnid" target="_blank"><i
+              class="fa-brands fa-linkedin"></i> LinkedIn</a>
         </li>
         <li>
-          <a class="sidebar-mobile__item" href="https://www.facebook.com/kunkey.git" target="_blank"><i
+          <a class="sidebar-mobile__item" href="https://www.facebook.com/neyugn-hnid" target="_blank"><i
               class="fa-brands fa-facebook"></i> Facebook</a>
         </li>
         <li>
-          <a class="sidebar-mobile__item" href="https://github.com/kunkey" target="_blank"><i
-              class="fa-brands fa-github"></i> Github</a>ss
+          <a class="sidebar-mobile__item" href="https://github.com/neyugn-hnid" target="_blank"><i
+              class="fa-brands fa-github"></i> Github</a>
         </li>
         <li>
-          <a class="sidebar-mobile__item mobile-contact" href="https://www.facebook.com/kunkey.git" target="_blank"><i
+          <a class="sidebar-mobile__item" href="https://www.facebook.com/neyugn-hnid" target="_blank"><i
+              class="fa-brands fa-facebook"></i> Facebook</a>
+        </li>
+        <li>
+          <a class="sidebar-mobile__item" href="https://github.com/neyugn-hnid" target="_blank"><i
+              class="fa-brands fa-github"></i> Github</a>
+        </li>
+        <li>
+          <a class="sidebar-mobile__item mobile-contact" href="https://www.facebook.com/neyugn-hnid" target="_blank"><i
               class="fa-solid fa-address-card"></i> Contact</a>
         </li>
-        <!-- <li>
-            <a class="sidebar-mobile__item mobile-contact" href="./assets/cv.pdf" target="_blank"
-              ><i class="fa-solid fa-file"></i> Contact</a
-            >
-          </li> -->
       </ul>
     </aside>
 
     <main>
       <section class="landing">
 
-        <img src="./assets/images/homebg.png" class="background" alt="" />
+        <img src="./assets/images/bg10.png" class="background" alt="" />
 
         <div class="hero-container" id="hero">
           <div class="wrapper">
             <section class="hero">
               <section class="hero__left">
                 <section class="hero__heading-background prevent-select link hidden fromTop">
-                  <h1 class="hero__heading">Hi, I'm Kunkey!</h1>
+                  <h1 class="hero__heading">Hi, I'm Van Dinh!</h1>
                 </section>
                 <div id="typed-strings">
-                  <p>A <span class="hero__fullstack">Fullstack</span> Web Developer</p>
-                  <p>A <span class="hero__frontend">Frontend</span> Web Developer</p>
-                  <p>A <span class="hero__backend">Backend</span> Web Developer</p>
+                  <p>A <span class="hero__fullstack">Software</span> Engineer</p>
                   <p>Your <span class="hero__next">Next</span> Colleague</p>
                 </div>
                 <div class="typed-container prevent-select link hidden fromTop">
                   <span id="typed"></span>
                 </div>
                 <p class="hero__paragraph link hidden fromTop">
-                  A full stack web developer who is passionate about creating beautiful, functional and responsive
-                  websites.
+                  I build exceptional digital experiences that are fast, accessible, and visually appealing.
                 </p>
-                <a href="#contact" class="hero__contact-btn">
+                <a href="https://www.facebook.com/neyugn-hnid" class="hero__contact-btn" target="_blank"
+                  rel="noopener noreferrer">
                   <button class="button hero__button link hidden fromTop">
-                    Let's Connect <i class="fa-solid fa-arrow-right"></i>
+                    Connect with me <i class="fa-solid fa-arrow-right"></i>
                   </button>
                 </a>
               </section>
-              <article class="hero__right">
-                <img class="hero__astronaut" src="./assets/images/astronaut.svg" alt="" />
+              <article class="hero__right hero__badge-area">
+                <img class="hero__id-card link hidden fromTop" src="./assets/images/card-rbg.png"
+                  alt="Van Dinh ID card" />
               </article>
             </section>
           </div>
         </div>
       </section>
 
+      <div class="container-about">
+        <div class="wrapper">
+          <section class="about" id="about">
+            <div class="about__content">
+              <article class="about__copy hidden fromLeft">
+                <p class="about__eyebrow">About Me</p>
+                <h2 class="about__heading">Van Dinh</h2>
+                <p class="about__paragraph">
+                  Fresh Graduate Software Engineer lulusan 2026 dengan passion di bidang frontend development dan UI
+                  modern. Berfokus pada pembuatan website clean, responsif, dan visual yang kuat untuk menghadirkan
+                  pengalaman digital yang optimal.
+                </p>
+                <p class="about__quote">
+                  "Turning ideas into clean, modern, and meaningful digital experiences."
+                </p>
+                <div class="about__actions">
+                  <a class="button about__button" href="./assets/cv.pdf" target="_blank">
+                    <i class="fa-regular fa-file-lines"></i> Download CV
+                  </a>
+                  <a class="button button--secondary about__button" href="#projects">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i> View Projects
+                  </a>
+                </div>
+              </article>
+
+              <article class="about__portrait hidden fromRight" aria-label="Van Dinh portrait">
+                <img src="./assets/images/card-rbg.png" alt="Van Dinh portrait" />
+              </article>
+            </div>
+
+            <div class="about__stats">
+              <article class="about__stat hidden fromBottom">
+                <span class="about__stat-icon"><i class="fa-solid fa-code"></i></span>
+                <strong>1</strong>
+                <p>Projects</p>
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </article>
+              <article class="about__stat hidden fromBottom">
+                <span class="about__stat-icon"><i class="fa-solid fa-award"></i></span>
+                <strong>1</strong>
+                <p>Certificates</p>
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </article>
+              <article class="about__stat hidden fromBottom">
+                <span class="about__stat-icon"><i class="fa-solid fa-globe"></i></span>
+                <strong>2</strong>
+                <p>Completed Works</p>
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </article>
+            </div>
+          </section>
+        </div>
+      </div>
+
       <div class="container-projects">
         <div class="wrapper">
           <section class="projects" id="projects">
-            <h2 class="projects__heading">Projects</h2>
-            <article class="projects__project hidden fromRight">
-              <article class="projects__laptop-mockup">
-                <video disableRemotePlayback muted autoplay playsinline>
-                  <source src="./assets/videos/chatify.webm" type='video/webm;codecs="vp9"' onerror="fallback(parentNode);
-                  function fallback(video) {;
-                    while (video.hasChildNodes()) {
-                      if (video.firstChild instanceof HTMLSourceElement) video.removeChild(video.firstChild);
-                      else video.parentNode.insertBefore(video.firstChild, video);
-                    }
-                    video.parentNode.removeChild(video);
-                  }" />
-                  <img src="./assets/videos/chatify-ios.png" alt="rsduel" loading="lazy" />
-                </video>
-              </article>
-              <section class="projects__info">
-                <h3 class="projects__title">CHATIFY</h3>
-                <p class="projects__paragraph">
-                  Chatify is a full-stack chat application which allows real-time communcation between users similar
-                  to Discord.
-                </p>
-                <section class="all-skills__icons all-skills__icons--small">
-                  <section class="all-skills__container">
-                    <article class="all-skills__icon ts">
-                      <img src="./assets/images/icons/typescript.svg" alt="typescript" loading="lazy" />
-                    </article>
-                    <p>Typescript</p>
-                  </section>
-                  <section class="all-skills__container">
-                    <article class="all-skills__icon react">
-                      <img src="./assets/images/icons/react.svg" alt="react" loading="lazy" />
-                    </article>
-                    <p>React</p>
-                  </section>
-                  <section class="all-skills__container">
-                    <article class="all-skills__icon mysql">
-                      <img src="./assets/images/icons/mysql.svg" alt="mysql" loading="lazy" />
-                    </article>
-                    <p>MySQL</p>
-                  </section>
-                  <section class="all-skills__container">
-                    <article class="all-skills__icon node">
-                      <img src="./assets/images/icons/node-js.svg" alt="node-js" loading="lazy" />
-                    </article>
-                    <p>NodeJS</p>
-                  </section>
-                  <section class="all-skills__container">
-                    <article class="all-skills__icon express">
-                      <img src="./assets/images/icons/express.svg" alt="express" loading="lazy" />
-                    </article>
-                    <p>ExpressJS</p>
-                  </section>
-                  <section class="all-skills__container">
-                    <article class="all-skills__icon socket">
-                      <img src="./assets/images/icons/socket.svg" alt="socket" loading="lazy" />
-                    </article>
-                    <p>Socket.IO</p>
-                  </section>
-                </section>
-                <details class="projects__demo-acc">
-                  <summary>
-                    <span>👇</span>
-                    Demo Account
-                  </summary>
-                  <p>Email: test@gmail.com</p>
-                  <p>Password: test</p>
-                </details>
-                <section class="projects__buttons">
-                  <a href="https://chatify-k8cb.onrender.com/login" target="_blank" rel="noopener noreferrer">
-                    <button class="button">Demo</button>
-                  </a>
-                  <a href="https://github.com/meganide/chat-app" target="_blank" rel="noopener noreferrer">
-                    <button class="button">Code</button>
-                  </a>
-                </section>
-              </section>
-            </article>
-            <article class="projects__project projects__project--reverse hidden fromLeft">
-              <article class="projects__laptop-mockup">
-                <video disableRemotePlayback muted autoplay playsinline>
-                  <source src="./assets/videos/tweeter.webm" type="video/webm" onerror="fallback(parentNode);
-                    function fallback(video) {;
-                  while (video.hasChildNodes()) {
-                    if (video.firstChild instanceof HTMLSourceElement) video.removeChild(video.firstChild);
-                    else video.parentNode.insertBefore(video.firstChild, video);
-                  }
-                  video.parentNode.removeChild(video);
-                }" />
-                  <img src="./assets/videos/tweeter-ios.png" alt="tweeter" loading="lazy" />
-                </video>
-              </article>
-              <section class="projects__info tweeter">
-                <h3 class="projects__title">TWEETER</h3>
-                <p class="projects__paragraph">
-                  Tweeter is a full-stack social media application that is heavily inspired by Twitter. The
-                  application boasts a comprehensive feature set, including full CRUD functionality and responsive
-                  design for all screen sizes.
-                </p>
-                <section class="all-skills__icons all-skills__icons--small">
-                  <section class="all-skills__container">
-                    <article class="all-skills__icon ts">
-                      <img src="./assets/images/icons/typescript.svg" alt="typescript" loading="lazy" />
-                    </article>
-                    <p>Typescript</p>
-                  </section>
-                  <section class="all-skills__container">
-                    <article class="all-skills__icon react">
-                      <img src="./assets/images/icons/react.svg" alt="react" loading="lazy" />
-                    </article>
-                    <p>React</p>
-                  </section>
-                  <section class="all-skills__container">
-                    <article class="all-skills__icon mysql">
-                      <img src="./assets/images/icons/mysql.svg" alt="mysql" loading="lazy" />
-                    </article>
-                    <p>MySQL</p>
-                  </section>
-                  <section class="all-skills__container">
-                    <article class="all-skills__icon node">
-                      <img src="./assets/images/icons/node-js.svg" alt="node-js" loading="lazy" />
-                    </article>
-                    <p>NodeJS</p>
-                  </section>
-                  <section class="all-skills__container">
-                    <article class="all-skills__icon express">
-                      <img src="./assets/images/icons/express.svg" alt="express" loading="lazy" />
-                    </article>
-                    <p>ExpressJS</p>
-                  </section>
-                  <section class="all-skills__container">
-                    <article class="all-skills__icon socket">
-                      <img src="./assets/images/icons/tailwind.svg" alt="tailwind" loading="lazy" />
-                    </article>
-                    <p>Tailwind</p>
-                  </section>
-                  <section class="all-skills__container">
-                    <article class="all-skills__icon socket">
-                      <img src="./assets/images/icons/prisma.svg" alt="prisma" loading="lazy" />
-                    </article>
-                    <p>Prisma</p>
-                  </section>
-                </section>
-                <details class="projects__demo-acc">
-                  <summary>
-                    <span>👇</span>
-                    Demo Account
-                  </summary>
-                  <p>Email: test@gmail.com</p>
-                  <p>Password: test</p>
-                </details>
-                <section class="projects__buttons">
-                  <a href="https://tweeter-ps0r.onrender.com/login" target="_blank" rel="noopener noreferrer">
-                    <button class="button">Demo</button>
-                  </a>
-                  <a href="https://github.com/meganide/Tweeter" target="_blank" rel="noopener noreferrer">
-                    <button class="button">Code</button>
-                  </a>
-                </section>
-              </section>
-            </article>
+            <header class="projects__header hidden fromTop">
+              <p class="projects__eyebrow">Selected Work</p>
+              <h2 class="projects__heading">Projects</h2>
+              <p class="projects__intro">
+                A compact set of web apps focused on responsive interfaces, useful flows, and clean frontend structure.
+              </p>
+            </header>
 
-            <article class="projects__project projects__project--enginers hidden fromRight">
-              <article class="projects__laptop-mockup">
-                <video disableRemotePlayback muted autoplay loop playsinline>
-                  <source src="./assets/videos/engineers2.webm" type="video/webm" onerror="fallback(parentNode);
-                  function fallback(video) {;
-                    while (video.hasChildNodes()) {
-                      if (video.firstChild instanceof HTMLSourceElement) video.removeChild(video.firstChild);
-                      else video.parentNode.insertBefore(video.firstChild, video);
-                    }
-                    video.parentNode.removeChild(video);
-                  }" />
-                  <img src="./assets/videos/engineers-ios.png" alt="engineers" loading="lazy" />
-                </video>
-              </article>
-              <section class="projects__info projects__info--engineers">
-                <h3 class="projects__title">ENGINEERS</h3>
-                <p class="projects__paragraph">
-                  I was responsible for rewriting the codebase for Engineers, a course database utilized by thousands
-                  of students each month (10-20k sessions monthly).
-                </p>
-                <section class="all-skills__icons all-skills__icons--small">
-                  <section class="all-skills__container">
-                    <article class="all-skills__icon drive">
-                      <img src="./assets/images/icons/google-drive.svg" alt="drive" loading="lazy" />
-                    </article>
-                    <p>Drive</p>
-                  </section>
-                  <section class="all-skills__container">
-                    <article class="all-skills__icon express">
-                      <img src="./assets/images/icons/express.svg" alt="express" loading="lazy" />
-                    </article>
-                    <p>ExpressJS</p>
-                  </section>
-                  <section class="all-skills__container">
-                    <article class="all-skills__icon react">
-                      <img src="./assets/images/icons/react.svg" alt="react" loading="lazy" />
-                    </article>
-                    <p>React</p>
-                  </section>
-                  <section class="all-skills__container">
-                    <article class="all-skills__icon node">
-                      <img src="./assets/images/icons/node-js.svg" alt="node-js" loading="lazy" />
-                    </article>
-                    <p>NodeJS</p>
-                  </section>
-                </section>
-                <a href="https://engineers.nu/" target="_blank" rel="noopener noreferrer">
-                  <button class="button">Check it out!</button>
+            <section class="projects__grid">
+              <article class="project-card project-card--featured hidden fromBottom">
+                <a class="project-card__media project-card__media--placeholder"
+                  href="https://github.com/neyugn-hnid/wisebot-rag" target="_blank" rel="noopener noreferrer"
+                  aria-label="Open Wisebot RAG repository">
+                  <i class="fa-solid fa-robot"></i>
+                  <span>AI Assistant</span>
                 </a>
-              </section>
-            </article>
-
-            <article class="projects__project project__your-project projects__your-project hidden fromLeft">
-              <article class="projects__laptop-mockup">
-                <video disableRemotePlayback muted autoplay playsinline>
-                  <source src="./assets/videos/yourproj.webm" type="video/webm" onerror="fallback(parentNode);
-                  function fallback(video) {;
-                    while (video.hasChildNodes()) {
-                      if (video.firstChild instanceof HTMLSourceElement) video.removeChild(video.firstChild);
-                      else video.parentNode.insertBefore(video.firstChild, video);
-                    }
-                    video.parentNode.removeChild(video);
-                  }" />
-                  <img src="./assets/videos/yourpj-ios.png" alt="your project" loading="lazy" />
-                </video>
+                <div class="project-card__body">
+                  <div class="project-card__meta">
+                    <span>Enterprise AI</span>
+                    <span>RAG</span>
+                  </div>
+                  <h3>Wisebot RAG</h3>
+                  <p>
+                    Enterprise AI assistant with document question answering, knowledge base management, RAG flow, local
+                    LLM support, and backend services.
+                  </p>
+                  <div class="project-card__tech" aria-label="Wisebot RAG technologies">
+                    <img
+                      src="https://skillicons.dev/icons?i=ts,react,java,spring,python,fastapi,postgres,docker&theme=dark"
+                      alt="TypeScript, React, Java, Spring, Python, FastAPI, PostgreSQL, Docker" loading="lazy" />
+                  </div>
+                  <div class="project-card__actions">
+                    <a class="button" href="https://github.com/neyugn-hnid/wisebot-rag" target="_blank"
+                      rel="noopener noreferrer">
+                      <i class="fa-brands fa-github"></i> GitHub
+                    </a>
+                  </div>
+                </div>
               </article>
 
-              <section class="projects__info projects__info--project">
-                <h3 class="projects__title">YOUR PROJECT</h3>
-                <p class="projects__paragraph">
-                  Are you looking for a dedicated and skilled professional to join your team or help with your next
-                  project? Look no further!
-                </p>
-                <a href="#contact"><button class="button">Contact Me</button></a>
-              </section>
-            </article>
-            <!-- <button class="button button--secondary projects__view-all">View All Projects</button> -->
+              <article class="project-card hidden fromBottom">
+                <a class="project-card__media project-card__media--placeholder"
+                  href="https://github.com/neyugn-hnid/vietnam-travle" target="_blank" rel="noopener noreferrer"
+                  aria-label="Open Vietnam Travel repository">
+                  <i class="fa-solid fa-map-location-dot"></i>
+                  <span>Travel Platform</span>
+                </a>
+                <div class="project-card__body">
+                  <div class="project-card__meta">
+                    <span>Graduation Project</span>
+                    <span>AI Travel</span>
+                  </div>
+                  <h3>Vietnam Travel</h3>
+                  <p>
+                    Tourism promotion website for Vietnam with smart place recommendations and a 24/7 travel consulting
+                    chatbot.
+                  </p>
+                  <div class="project-card__tech" aria-label="Vietnam Travel technologies">
+                    <img src="https://skillicons.dev/icons?i=js,react,nodejs,express,mysql&theme=dark"
+                      alt="JavaScript, React, Node.js, Express, MySQL" loading="lazy" />
+                  </div>
+                  <div class="project-card__actions">
+                    <a class="button" href="https://github.com/neyugn-hnid/vietnam-travle" target="_blank"
+                      rel="noopener noreferrer">
+                      <i class="fa-brands fa-github"></i> GitHub
+                    </a>
+                  </div>
+                </div>
+              </article>
+
+              <article class="project-card hidden fromBottom">
+                <a class="project-card__media project-card__media--placeholder"
+                  href="https://github.com/neyugn-hnid/hsk-learning-ios" target="_blank" rel="noopener noreferrer"
+                  aria-label="Open HSK Learning iOS repository">
+                  <i class="fa-solid fa-mobile-screen-button"></i>
+                  <span>Mobile Learning</span>
+                </a>
+                <div class="project-card__body">
+                  <div class="project-card__meta">
+                    <span>iOS/iPadOS</span>
+                    <span>Expo</span>
+                  </div>
+                  <h3>HSK Learning iOS</h3>
+                  <p>
+                    Mobile workspace for an HSK learning app using Expo and React Navigation, connected to mobile JSON
+                    APIs for auth, lessons, and roadmaps.
+                  </p>
+                  <div class="project-card__tech" aria-label="HSK Learning iOS technologies">
+                    <img src="https://skillicons.dev/icons?i=ts,react&theme=dark" alt="TypeScript, React Native"
+                      loading="lazy" />
+                  </div>
+                  <div class="project-card__actions">
+                    <a class="button" href="https://github.com/neyugn-hnid/hsk-learning-ios" target="_blank"
+                      rel="noopener noreferrer">
+                      <i class="fa-brands fa-github"></i> GitHub
+                    </a>
+                  </div>
+                </div>
+              </article>
+
+
+            </section>
           </section>
         </div>
       </div>
@@ -934,70 +344,53 @@
                 <section class="all-skills__icons">
                   <section class="all-skills__container">
                     <article class="all-skills__icon html5">
-                      <img src="./assets/images/icons/html.svg" alt="html" loading="lazy" />
+                      <img src="https://skillicons.dev/icons?i=html&theme=dark" alt="html" loading="lazy" />
                     </article>
                     <p>HTML5</p>
                   </section>
                   <section class="all-skills__container">
                     <article class="all-skills__icon css">
-                      <img src="./assets/images/icons/css3.svg" alt="css" loading="lazy" />
+                      <img src="https://skillicons.dev/icons?i=css&theme=dark" alt="css" loading="lazy" />
                     </article>
                     <p>CSS3</p>
                   </section>
                   <section class="all-skills__container">
                     <article class="all-skills__icon js">
-                      <img src="./assets/images/icons/javascript.svg" alt="javascript" loading="lazy" />
+                      <img src="https://skillicons.dev/icons?i=javascript&theme=dark" alt="javascript" loading="lazy" />
                     </article>
                     <p>Javascript</p>
                   </section>
                   <section class="all-skills__container">
+                    <article class="all-skills__icon ts">
+                      <img src="https://skillicons.dev/icons?i=typescript&theme=dark" alt="typescript" loading="lazy" />
+                    </article>
+                    <p>Typescript</p>
+                  </section>
+                  <section class="all-skills__container">
                     <article class="all-skills__icon react">
-                      <img src="./assets/images/icons/react.svg" alt="react" loading="lazy" />
+                      <img src="https://skillicons.dev/icons?i=react&theme=dark" alt="react" loading="lazy" />
                     </article>
                     <p>React</p>
                   </section>
                   <section class="all-skills__container">
-                    <article class="all-skills__icon react">
-                      <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/nextjs-icon.png" alt="react" loading="lazy" />
-                    </article>
-                    <p>NextJs</p>
-                  </section>
-                  <section class="all-skills__container">
-                    <article class="all-skills__icon react-query">
-                      <img src="./assets/images/icons/svelte.png" alt="react-query" loading="lazy" />
-                    </article>
-                    <p>Svelte</p>
-                  </section>
-                  <section class="all-skills__container">
                     <article class="all-skills__icon tailwind">
-                      <img src="./assets/images/icons/tailwind.svg" alt="tailwind" loading="lazy" />
+                      <img src="https://skillicons.dev/icons?i=tailwindcss&theme=dark" alt="tailwind" loading="lazy" />
                     </article>
                     <p>Tailwind</p>
                   </section>
                   <section class="all-skills__container">
-                    <article class="all-skills__icon tailwind">
-                      <img src="https://cdn-icons-png.flaticon.com/512/5968/5968672.png" alt="tailwind" loading="lazy" />
+                    <article class="all-skills__icon bootstrap">
+                      <img src="https://skillicons.dev/icons?i=bootstrap&theme=dark" alt="bootstrap" loading="lazy" />
                     </article>
                     <p>Bootstrap</p>
                   </section>
                   <section class="all-skills__container">
                     <article class="all-skills__icon sass">
-                      <img src="./assets/images/icons/sass.svg" alt="sass" loading="lazy" />
+                      <img src="https://skillicons.dev/icons?i=sass&theme=dark" alt="sass" loading="lazy" />
                     </article>
                     <p>Sass</p>
                   </section>
-                  <section class="all-skills__container" title="Styled Components">
-                    <article class="all-skills__icon styled-components">
-                      <img src="./assets/images/icons/styled-components.png" alt="styled-components" loading="lazy" />
-                    </article>
-                    <p>SC</p>
-                  </section>
-                  <section class="all-skills__container" title="Styled Components">
-                    <article class="all-skills__icon styled-components">
-                      <img src="https://yaji.gallerycdn.vsassets.io/extensions/yaji/cocos-effect/0.4.3/1685960903857/Microsoft.VisualStudio.Services.Icons.Default" alt="styled-components" loading="lazy" />
-                    </article>
-                    <p>Cocos Creator</p>
-                  </section>
+
                 </section>
               </article>
               <article class="all-skills__skill all-skills__skill--backend hidden fromRight">
@@ -1007,76 +400,53 @@
                 <section class="all-skills__icons">
                   <section class="all-skills__container">
                     <article class="all-skills__icon node">
-                      <img src="./assets/images/icons/node-js.svg" alt="node" loading="lazy" />
+                      <img src="https://skillicons.dev/icons?i=nodejs&theme=dark" alt="node" loading="lazy" />
                     </article>
                     <p>NodeJS</p>
                   </section>
                   <section class="all-skills__container">
                     <article class="all-skills__icon express">
-                      <img src="./assets/images/icons/express.svg" alt="express" loading="lazy" />
+                      <img src="https://skillicons.dev/icons?i=expressjs&theme=dark" alt="express" loading="lazy" />
                     </article>
                     <p>ExpressJS</p>
                   </section>
                   <section class="all-skills__container">
-                    <article class="all-skills__icon python">
-                      <img style="height: 26px;" src="./assets/images/icons/php.png" alt="python" loading="lazy" />
+                    <article class="all-skills__icon spring">
+                      <img src="https://skillicons.dev/icons?i=spring&theme=dark" alt="springboot" loading="lazy" />
                     </article>
-                    <p>Php</p>
-                  </section>
-                  <section class="all-skills__container">
-                    <article class="all-skills__icon socket">
-                      <img src="./assets/images/icons/laravel.png" alt="socket" loading="lazy" />
-                    </article>
-                    <p>Laravel</p>
+                    <p>Springboot</p>
                   </section>
                   <section class="all-skills__container">
                     <article class="all-skills__icon mysql">
-                      <img src="./assets/images/icons/mysql.svg" alt="mysql" loading="lazy" />
+                      <img src="https://skillicons.dev/icons?i=mysql&theme=dark" alt="mysql" loading="lazy" />
                     </article>
                     <p>MySQL</p>
                   </section>
                   <section class="all-skills__container">
-                    <article class="all-skills__icon mongodb">
-                      <img src="./assets/images/icons/mongodb.svg" alt="mongodb" loading="lazy" />
+                    <article class="all-skills__icon postgres">
+                      <img src="https://skillicons.dev/icons?i=postgresql&theme=dark" alt="postgresql" loading="lazy" />
                     </article>
-                    <p>MongoDB</p>
-                  </section>
-                  <section class="all-skills__container">
-                    <article class="all-skills__icon graphql">
-                      <img src="./assets/images/icons/sequelize.png" alt="graphql" loading="lazy" />
-                    </article>
-                    <p>Sequelize</p>
+                    <p>PostgreSQL</p>
                   </section>
                   <section class="all-skills__container">
                     <article class="all-skills__icon api">
-                      <img src="./assets/images/icons/api.svg" alt="api" loading="lazy" />
+                      <img src="https://skillicons.dev/icons?i=fastapi&theme=dark" alt="rest api" loading="lazy" />
                     </article>
                     <p>REST API</p>
                   </section>
                   <section class="all-skills__container">
                     <article class="all-skills__icon prisma">
-                      <img src="./assets/images/icons/prisma.svg" alt="prisma" loading="lazy" />
+                      <img src="https://skillicons.dev/icons?i=prisma&theme=dark" alt="prisma" loading="lazy" />
                     </article>
                     <p>Prisma</p>
                   </section>
                   <section class="all-skills__container">
                     <article class="all-skills__icon auth">
-                      <img src="./assets/images/icons/auth.svg" alt="auth" loading="lazy" />
+                      <img src="https://skillicons.dev/icons?i=firebase&theme=dark" alt="jwt auth" loading="lazy" />
                     </article>
-                    <p>Auth</p>
+                    <p>JWT</p>
                   </section>
-                  <section class="all-skills__container">
-                    <article class="all-skills__icon socket">
-                      <img src="./assets/images/icons/socket.svg" alt="socket" loading="lazy" />
-                    </article>
-                    <p>Socket.IO</p>
-                  </section>
-                  <section class="all-skills__container">
-                    <article class="all-skills__icon firebase">
-                      <img src="./assets/images/icons/firebase.svg" alt="firebase" loading="lazy" />
-                    </article>
-                    <p>Firebase</p>
-                  </section>
+
                 </section>
               </article>
               <article class="all-skills__skill all-skills__skill--other hidden fromRight">
@@ -1084,90 +454,56 @@
                   <h3>Other</h3>
                 </header>
                 <section class="all-skills__icons">
-                  <section class="all-skills__container">
-                    <article class="all-skills__icon ts">
-                      <img src="./assets/images/icons/typescript.svg" alt="typescript" loading="lazy" />
-                    </article>
-                    <p>Typescript</p>
-                  </section>
+
                   <section class="all-skills__container">
                     <article class="all-skills__icon git">
-                      <img src="./assets/images/icons/git.svg" alt="git" loading="lazy" />
+                      <img src="https://skillicons.dev/icons?i=git&theme=dark" alt="git" loading="lazy" />
                     </article>
                     <p>Git</p>
                   </section>
                   <section class="all-skills__container">
                     <article class="all-skills__icon github">
-                      <img src="./assets/images/icons/github.svg" alt="github" loading="lazy" />
+                      <img src="https://skillicons.dev/icons?i=github&theme=dark" alt="github" loading="lazy" />
                     </article>
                     <p>Github</p>
                   </section>
                   <section class="all-skills__container">
-                    <article class="all-skills__icon postman">
-                      <img src="./assets/images/icons/gitlab.svg" alt="postman" loading="lazy" />
+                    <article class="all-skills__icon apache">
+                      <img src="https://skillicons.dev/icons?i=nginx&theme=dark" alt="apache" loading="lazy" />
                     </article>
-                    <p>Gitlab</p>
+                    <p>Apache</p>
                   </section>
                   <section class="all-skills__container">
-                    <article class="all-skills__icon photoshop">
-                      <img src="./assets/images/icons/docker.png" alt="photoshop" loading="lazy" />
+                    <article class="all-skills__icon xampp">
+                      <img src="https://skillicons.dev/icons?i=php&theme=dark" alt="xampp" loading="lazy" />
+                    </article>
+                    <p>Xampp</p>
+                  </section>
+                  <section class="all-skills__container">
+                    <article class="all-skills__icon docker">
+                      <img src="https://skillicons.dev/icons?i=docker&theme=dark" alt="docker" loading="lazy" />
                     </article>
                     <p>Docker</p>
                   </section>
                   <section class="all-skills__container">
-                    <article class="all-skills__icon vite">
-                      <img src="./assets/images/icons/portainer.png" alt="vite" loading="lazy" />
-                    </article>
-                    <p>Portainer</p>
-                  </section>
-                  <section class="all-skills__container">
-                    <article class="all-skills__icon vite">
-                      <img src="./assets/images/icons/jenkins.png" alt="vite" loading="lazy" />
-                    </article>
-                    <p>Jenkins</p>
-                  </section>
-                  <!-- <section class="all-skills__container">
-                      <article class="all-skills__icon jest">
-                        <img src="./assets/images/icons/jest.svg" alt="jest" loading="lazy" />
-                      </article>
-                      <p>Jest</p>
-                    </section> -->
-                  <section class="all-skills__container">
                     <article class="all-skills__icon postman">
-                      <img src="./assets/images/icons/postman.svg" alt="postman" loading="lazy" />
+                      <img src="https://skillicons.dev/icons?i=postman&theme=dark" alt="postman" loading="lazy" />
                     </article>
                     <p>Postman</p>
                   </section>
-                  <!-- <section class="all-skills__container">
-                      <article class="all-skills__icon aws">
-                        <img src="./assets/images/icons/aws.svg" alt="aws" loading="lazy" />
-                      </article>
-                      <p>EC2 & RDS</p>
-                    </section> -->
                   <section class="all-skills__container">
-                    <article class="all-skills__icon heroku">
-                      <img src="./assets/images/icons/heroku.svg" alt="heroku" loading="lazy" />
+                    <article class="all-skills__icon vscode">
+                      <img src="https://skillicons.dev/icons?i=vscode&theme=dark" alt="vs code" loading="lazy" />
                     </article>
-                    <p>Heroku</p>
+                    <p>VS Code</p>
                   </section>
                   <section class="all-skills__container">
-                    <article class="all-skills__icon photoshop">
-                      <img src="./assets/images/icons/adobe-photoshop.svg" alt="photoshop" loading="lazy" />
+                    <article class="all-skills__icon intellij">
+                      <img src="https://skillicons.dev/icons?i=idea&theme=dark" alt="intellij idea" loading="lazy" />
                     </article>
-                    <p>Photoshop</p>
+                    <p>IntelliJ IDEA</p>
                   </section>
-                  <!-- <section class="all-skills__container">
-                      <article class="all-skills__icon netlify">
-                        <img src="./assets/images/icons/netlify.svg" alt="netlify" loading="lazy" />
-                      </article>
-                      <p>Netlify</p>
-                    </section> -->
-                  <!-- <section class="all-skills__container">
-                      <article class="all-skills__icon shopify">
-                        <img src="./assets/images/icons/shopify.svg" alt="shopify" loading="lazy" />
-                      </article>
-                      <p>Shopify</p>
-                    </section> -->
+
                 </section>
               </article>
             </section>
@@ -1175,41 +511,26 @@
         </div>
       </div>
 
-      <!-- <div class="container-blog">
-        <div class="wrapper">
-          <section class="blog" id="blog">
-            <h2 class="blog__heading">My Latest Posts</h2>
-            <div class="swiper blog-swiper">
-              <div class="swiper-wrapper posts-container">
-              </div>
-              <div class="swiper-button-next blog-swiper-button-next"></div>
-              <div class="swiper-button-prev blog-swiper-button-prev"></div>
-              <div class="swiper-pagination blog-swiper-pagination"></div>
-            </div>
-          </section>
-        </div>
-      </div> -->
 
-      <div class="container-contact">
+
+      <div class="container-meteor-game">
         <div class="wrapper">
-          <section class="contact hidden" id="contact">
-            <h2 class="contact__heading">Contact</h2>
-            <form class="contact__form" id="sendForm">
-              <input type="text" name="name" id="name" placeholder="Name" />
-              <input type="email" name="email" id="email" placeholder="Email" required />
-              <textarea id="message" name="message" cols="10" rows="10" placeholder="Message" required></textarea>
-              <input type="submit" id="sendButton" class="button button--contact" value="Send" />
-              <aside id="form__info" class="hide">
-                <p id="form__popup-txt">Email successfully sent!</p>
-              </aside>
-            </form>
+          <section class="meteor-game" id="game">
+            <header class="meteor-game__header hidden fromTop">
+              <p class="meteor-game__eyebrow">Mini Game</p>
+              <h2 class="meteor-game__heading">Meteor Game</h2>
+              <p class="meteor-game__copy">
+                Move the spaceship with your mouse, hold click to shoot, and destroy the meteors before they hit you.
+              </p>
+            </header>
+            <div class="meteor-game__frame hidden fromBottom">
+              <canvas id="meteor-canvas" class="meteor-game__canvas"></canvas>
+            </div>
           </section>
         </div>
       </div>
 
-       <div class="back-to-top" id="backToTop">
-         <a href="#top">Top</a>
-       </div>
+
 
 
 
@@ -1217,203 +538,12 @@
 
     <script src="https://kit.fontawesome.com/8bb946769b.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- Electric Tentacles-->
-    <script src="./libs/electric-tentacles/script.js?t=12233"></script>
-    <!-- <script type="text/javascript" src="/javascript/particle.js"></script> -->
-
-    <script>
-      const imageDiv = document.getElementById('floating-image');
-      // Lắng nghe sự kiện chuột
-      document.addEventListener('mousemove', (event) => {
-        const mouseX = event.clientX;
-        const mouseY = event.clientY;
-
-        // Di chuyển div theo chuột
-        imageDiv.style.left = `${mouseX}px`;
-        imageDiv.style.top = `${mouseY}px`;
-      });
-
-      // Shooting Stars Animation
-      class ShootingStar {
-        constructor(canvas) {
-          this.canvas = canvas;
-          this.ctx = canvas.getContext('2d');
-          this.stars = [];
-          this.resize();
-          this.init();
-          this.animate();
-
-          window.addEventListener('resize', () => this.resize());
-        }
-
-        resize() {
-          this.canvas.width = window.innerWidth;
-          this.canvas.height = window.innerHeight;
-        }
-
-        init() {
-          // Tạo nhiều sao băng ban đầu hơn
-          for (let i = 0; i < 6; i++) {
-            this.createShootingStar();
-          }
-        }
-
-        createShootingStar() {
-          const star = {
-            x: Math.random() * this.canvas.width,
-            y: Math.random() * this.canvas.height * 0.3, // Chỉ xuất hiện ở phần trên
-            vx: (Math.random() - 0.5) * 8 + 2, // Tốc độ ngang
-            vy: Math.random() * 3 + 2, // Tốc độ dọc
-            life: 1.0,
-            decay: Math.random() * 0.02 + 0.005,
-            size: Math.random() * 4 + 2, // Tăng kích thước từ 1-3 lên 2-6
-            trail: []
-          };
-          this.stars.push(star);
-        }
-
-        update() {
-          for (let i = this.stars.length - 1; i >= 0; i--) {
-            const star = this.stars[i];
-
-            // Lưu vị trí cũ cho trail
-            star.trail.push({ x: star.x, y: star.y });
-            if (star.trail.length > 20) {
-              star.trail.shift();
-            }
-
-            // Cập nhật vị trí
-            star.x += star.vx;
-            star.y += star.vy;
-            star.life -= star.decay;
-
-            // Xóa sao băng khi hết life hoặc ra khỏi màn hình
-            if (star.life <= 0 || star.x > this.canvas.width || star.y > this.canvas.height) {
-              this.stars.splice(i, 1);
-            }
-          }
-
-          // Tạo sao băng mới ngẫu nhiên (tăng tần suất từ 0.02 lên 0.05)
-          if (Math.random() < 0.05) {
-            this.createShootingStar();
-          }
-        }
-
-        draw() {
-          this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
-
-          for (const star of this.stars) {
-            // Vẽ trail
-            this.ctx.strokeStyle = `rgba(255, 255, 255, ${star.life * 0.3})`;
-            this.ctx.lineWidth = 1;
-            this.ctx.beginPath();
-            for (let i = 0; i < star.trail.length - 1; i++) {
-              const alpha = (i / star.trail.length) * star.life * 0.3;
-              this.ctx.strokeStyle = `rgba(255, 255, 255, ${alpha})`;
-              this.ctx.lineWidth = (i / star.trail.length) * 2 + 0.5;
-              this.ctx.beginPath();
-              this.ctx.moveTo(star.trail[i].x, star.trail[i].y);
-              this.ctx.lineTo(star.trail[i + 1].x, star.trail[i + 1].y);
-              this.ctx.stroke();
-            }
-
-            // Vẽ sao băng chính
-            this.ctx.fillStyle = `rgba(255, 255, 255, ${star.life})`;
-            this.ctx.beginPath();
-            this.ctx.arc(star.x, star.y, star.size, 0, Math.PI * 2);
-            this.ctx.fill();
-
-            // Vẽ hiệu ứng sáng
-            const gradient = this.ctx.createRadialGradient(star.x, star.y, 0, star.x, star.y, star.size * 3);
-            gradient.addColorStop(0, `rgba(255, 255, 255, ${star.life * 0.8})`);
-            gradient.addColorStop(0.5, `rgba(255, 255, 255, ${star.life * 0.3})`);
-            gradient.addColorStop(1, 'rgba(255, 255, 255, 0)');
-
-            this.ctx.fillStyle = gradient;
-            this.ctx.beginPath();
-            this.ctx.arc(star.x, star.y, star.size * 3, 0, Math.PI * 2);
-            this.ctx.fill();
-          }
-        }
-
-        animate() {
-          this.update();
-          this.draw();
-          requestAnimationFrame(() => this.animate());
-        }
-      }
-
-      // Khởi tạo hiệu ứng sao băng khi trang load
-      window.addEventListener('load', () => {
-        const canvas = document.getElementById('shooting-stars-canvas');
-        new ShootingStar(canvas);
-      });
-
-      // Load dynamic modules when trang load
-      window.addEventListener('load', () => {
-        const randomCache = Math.random().toString(36).substring(2, 15);
-        // const randomCache = 1;
-
-        // Khởi tạo blog posts
-        import(`./javascript/blogPost.js?t=${randomCache}`).then(module => {
-          const { BlogPost } = module;
-          const blogPost = new BlogPost();
-          blogPost.getPosts(10).then(posts => {
-            // console.log(posts);
-            blogPost.renderPosts(posts);
-          }).catch(error => {
-            console.error('Error loading blog posts:', error);
-          });
-        });
-
-
-        // khởi tạo music player
-        import(`./javascript/musicPlayer.js?t=${randomCache}`).then(module => {
-          // const { MusicPlayer } = module;
-          // const musicPlayer = new MusicPlayer();
-          // musicPlayer.init();
-        });
-      });
-    </script>
+    <script src="./libs/electric-tentacles/script.js?t=12234"></script>
+    <script src="./javascript/pageEffects.js"></script>
   </div>
-
-  <div class="container-music-player">
-    <div class="player">
-      <audio class="player__audio viewer">
-        <source src="assets/music/angel.mp3" type="audio/mpeg" data-trackid="1">
-        Your browser does not support the audio element.
-      </audio>
-      <div class="song-panel">
-        <div class="song-panel__label">Music Box</div>
-        <div class="song-info">
-          <div class="song-info__title">Angel Speed Up</div>
-          <div class="song-info__artist">Shipu Artist</div>
-          <div class="progress">
-            <div class="progress__filled"></div>
-          </div>
-        </div>
-      </div>
-      <div class="player-controls">
-        <div class="spinner">
-          <div class="spinner__disc"
-            style="background-image: url(https://i.pinimg.com/236x/a3/bf/98/a3bf98e6869c90b2fe8b87cd5f166364.jpg)">
-            <div class="center__disc"></div>
-          </div>
-        </div>
-        <button class="backward"><i class="fas fa-backward fa-2x"></i></button>
-        <button class="play">
-          <i class="fas fa-play fa-3x"></i>
-          <span class="pause left"></span>
-          <span class="pause right"></span>
-        </button>
-        <button class="forward"><i class="fas fa-forward fa-2x"></i></button>
-      </div>
-    </div>
-  </div>
-
 
 </body>
 

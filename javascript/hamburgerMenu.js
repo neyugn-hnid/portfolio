@@ -6,15 +6,17 @@ export function showSidebar() {
   const closeIcon = document.querySelector('.nav__hamburger-close');
   const navbarMobile = document.querySelector('.nav__mobile');
 
+  if (!sidebar || !hamburger || !hamburgerIcon || !closeIcon || !navbarMobile) return;
+
   // Open & close sidebar on hamburger icon click
   function toggleMenu() {
     if (sidebar.classList.contains('show-sidebar')) {
-      navbarMobile.style.background = "transparent"
+      navbarMobile.classList.remove('nav__mobile--open');
       sidebar.classList.remove('show-sidebar');
       closeIcon.style.display = 'none';
       hamburgerIcon.style.display = 'block';
     } else {
-      navbarMobile.style.background = "#0D0514"
+      navbarMobile.classList.add('nav__mobile--open');
       sidebar.classList.add('show-sidebar');
       closeIcon.style.display = 'block';
       hamburgerIcon.style.display = 'none';
@@ -24,15 +26,18 @@ export function showSidebar() {
   // Close sidebar on clicks outside of sidebar
   function closeSideBarOnClickOutside(e) {
     if (
-      !e.target.classList.contains('sidebar-mobile') &&
       sidebar.classList.contains('show-sidebar') &&
-      !e.target.classList.contains('nav__hamburger-icon')
+      !sidebar.contains(e.target) &&
+      !hamburger.contains(e.target)
     ) {
       toggleMenu();
     }
   }
 
-  hamburger.addEventListener('click', toggleMenu);
+  hamburger.addEventListener('click', (event) => {
+    event.stopPropagation();
+    toggleMenu();
+  });
 
   // Close sidebar when user clicks on link in sidebar
   sidebarItems.forEach((item) => {

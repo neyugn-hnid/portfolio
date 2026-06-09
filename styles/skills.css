@@ -1,6 +1,9 @@
 .container-skills {
-  background: -webkit-linear-gradient(to bottom, rgb(3, 4, 13), #080E2D);
-  background: linear-gradient(to bottom, rgb(3, 4, 13), #080E2D);
+  background:
+    url(../assets/images/bg14.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 
@@ -25,55 +28,111 @@
 }
 
 .all-skills {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 6rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(17.5rem, 1fr));
+  gap: 1.5rem;
   width: 100%;
   margin-bottom: 10rem;
   text-align: center;
 }
 
 .all-skills__skill {
-  border-radius: 5px;
   flex: 1;
+  padding: 1.5rem;
+}
+
+.all-skills__skill h3 {
+  font-size: 1.65rem;
+  font-weight: 700;
+  letter-spacing: 0;
 }
 
 .all-skills__icons {
-  display: flex;
-  flex-flow: row wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(5.75rem, 1fr));
   justify-content: center;
-  gap: 1rem;
+  gap: .9rem;
 }
 
 .all-skills__container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: .3125rem;
+  gap: .55rem;
+  min-width: 0;
+  padding: .85rem .5rem;
+  border: 1px solid rgba(255, 255, 255, .08);
+  border-radius: .65rem;
+}
+
+.all-skills__container:hover {
+  transform: translateY(-.35rem);
+  border-color: rgba(255, 255, 255, .22);
+  background: rgba(255, 255, 255, .07);
 }
 
 .all-skills__icon {
-  border-radius: 50%;
-  height: 80px;
-  width: 80px;
+  --skill-color: 255, 255, 255;
+  border-radius: .9rem;
+  height: 4.25rem;
+  width: 4.25rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  background:
+    radial-gradient(circle at 35% 25%, rgba(255, 255, 255, .2), transparent 35%),
+    rgba(var(--skill-color), .14);
+  border: 1px solid rgba(var(--skill-color), .28);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .12), 0 .8rem 1.4rem rgba(0, 0, 0, .18);
 }
 
-.all-skills__icon img {
-  width: 40px;
-  height: 40px;
+.all-skills__icon img,
+.all-skills__icon i {
+  width: 3rem;
+  height: 3rem;
+}
+
+.all-skills__icon i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(var(--skill-color));
+  font-size: 2rem;
+  line-height: 1;
+}
+
+.all-skills__container p {
+  width: 100%;
+  color: rgba(255, 255, 255, .82);
+  font-size: .92rem;
+  line-height: 1.2;
+  overflow-wrap: anywhere;
 }
 
 .all-skills__icons--small .all-skills__icon {
   height: 35px;
   width: 35px;
+  border-radius: 50%;
 }
 
 .all-skills__icons--small .all-skills__icon img {
   width: 17.5px;
   height: 17.5px;
+}
+
+.all-skills__icons--small .all-skills__container {
+  gap: .3125rem;
+  min-width: auto;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+}
+
+.all-skills__icons--small .all-skills__container:hover {
+  transform: none;
+  border-color: transparent;
+  background: transparent;
 }
 
 .all-skills__icons--small {
@@ -86,134 +145,166 @@
 }
 
 .html5 {
-  background-color: rgb(228, 77, 38, 0.2);
+  --skill-color: 228, 77, 38;
 }
 
 .css {
-  background-color: rgb(21, 114, 182, 0.2);
+  --skill-color: 21, 114, 182;
 }
 
 .js {
-  background-color: rgb(247, 223, 30, 0.2);
+  --skill-color: 247, 223, 30;
 }
 
 .ts {
-  background-color: rgb(22, 119, 199, 0.2);
+  --skill-color: 22, 119, 199;
 }
 
 .react {
-  background-color: rgb(85, 195, 226, 0.2);
+  --skill-color: 85, 195, 226;
 }
 
 .tailwind {
-  background-color: rgb(68,168,179, 0.2);
+  --skill-color: 68, 168, 179;
+}
+
+.bootstrap {
+  --skill-color: 121, 82, 179;
 }
 
 .sass {
-  background-color: rgb(207,100,154, 0.2);
+  --skill-color: 207, 100, 154;
 }
 
 .styled-components {
-  background-color: rgb(255,204,128, 0.2);
+  --skill-color: 255, 204, 128;
 }
 
 .react-query {
-  background-color: rgb(255,217,76, 0.2);
+  --skill-color: 255, 217, 76;
 }
 
 .node {
-  background-color: rgb(85, 195, 226, 0.2);
+  --skill-color: 85, 195, 226;
 }
 
 .express {
-  background-color: rgba(248, 248, 248, 0.7);
+  --skill-color: 248, 248, 248;
 }
 
 .mysql {
-  background-color: rgb(44,117,149, 0.2);
+  --skill-color: 44, 117, 149;
 }
 
 .mongodb {
-  background-color: rgb(79,170,65, 0.2);
+  --skill-color: 79, 170, 65;
+}
+
+.postgres {
+  --skill-color: 51, 103, 145;
 }
 
 .graphql {
-  background-color: rgb(223,52,166, 0.2);
+  --skill-color: 223, 52, 166;
 }
 
 .api {
-  background-color: rgb(87,164,255, 0.2);
+  --skill-color: 87, 164, 255;
 }
 
 .prisma {
-  background-color: rgb(210,210,210, 0.2);
+  --skill-color: 210, 210, 210;
 }
 
 .auth {
-  background-color: rgb(0,169,18, 0.2);
+  --skill-color: 0, 169, 18;
 }
 
 .socket {
-  background-color: rgba(95, 95, 95, 0.2);
+  --skill-color: 95, 95, 95;
 }
 
 .firebase {
-  background-color: rgb(255,202,40, 0.2);
+  --skill-color: 255, 202, 40;
 }
 
 .git {
-  background-color: rgb(222,76,54, 0.2);
+  --skill-color: 222, 76, 54;
 }
 
 .github {
-  background-color: rgba(248, 248, 248, 0.7);
+  --skill-color: 248, 248, 248;
 }
 
 .vite {
-  background-color: rgb(135,120,255, 0.2);
+  --skill-color: 135, 120, 255;
 }
 
 .jest {
-  background-color: rgb(153,65,91, 0.2);
+  --skill-color: 153, 65, 91;
 }
 
 .postman {
-  background-color: rgb(243,105,51, 0.2);
+  --skill-color: 243, 105, 51;
+}
+
+.apache {
+  --skill-color: 214, 48, 49;
+}
+
+.xampp {
+  --skill-color: 251, 125, 20;
+}
+
+.vscode {
+  --skill-color: 0, 122, 204;
+}
+
+.intellij {
+  --skill-color: 255, 49, 111;
 }
 
 .aws {
-  background-color: rgb(255,153,0, 0.4);
+  --skill-color: 255, 153, 0;
 }
 
 .heroku {
-  background-color: rgb(103,98,166, 0.2);
+  --skill-color: 103, 98, 166;
 }
 
 .netlify {
-  background-color: rgb(66,181,187, 0.2);
+  --skill-color: 66, 181, 187;
 }
 
 .photoshop {
-  background-color: rgb(49,168,255, 0.2);
+  --skill-color: 49, 168, 255;
 }
 
 .python {
-  background-color: rgb(55,115,165, 0.2);
+  --skill-color: 55, 115, 165;
+}
+
+.spring {
+  --skill-color: 109, 179, 63;
+}
+
+.docker {
+  --skill-color: 36, 150, 237;
 }
 
 .shopify {
-  background-color: rgb(149,191,70, 0.2);
+  --skill-color: 149, 191, 70;
 }
 
 .drive {
-  background-color: rgb(0,172,71, 0.2);
+  --skill-color: 0, 172, 71;
 }
 
 
 
 @media screen and (max-width: 760px) {
   .all-skills {
-    flex-direction: column;
+    grid-template-columns: 1fr;
     margin-bottom: 5rem;
   }
 }

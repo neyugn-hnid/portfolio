@@ -248,8 +248,8 @@ window.onload = function () {
             last_mouse.x = mouse.x;
             last_mouse.y = mouse.y;
 
-            mouse.x = e.pageX;
-            mouse.y = e.pageY;
+            mouse.x = e.clientX;
+            mouse.y = e.clientY;
         },
         false
     );
